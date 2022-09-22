@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="./css/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabela</title>
+</head>
+<body>
+   <header>
+      <a href="https://alura.com.br/" target="_blank">
+         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      </a>      
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+   </header>
+      <main class="container">
+      <h1>Campeonato de carteado</h1>
+      <h3>Administre rodadas e acompanhe a classificação a cada jogada</h3>
+      <h3>Seu jogo muito mais divertido</h3> 
+      <table>
+         <thead>
+         <tr>
+            <th>Ranking</th>
+            <th>Nome</th>
+            <th>Vitórias</th>
+            <th>Empates</th>
+            <th>Derrotas</th>
+            <th>Pontos</th>
+            <th colspan="2">Ações</th>
+         </tr>
+         </thead>
+         <tbody id="tabelaJogadores">
+         
+         </tbody>
+      </table>
+      <div class="mensagem-vitoria escondido"><p></p></div>
+      <form>
+         <fieldset>
+            <div id="botoes-partida">
+               <button id="encerrar-partida">Encerrar partida</button>
+               <button id="reiniciar-partida">Reiniciar partida</button>
+               <button id="nova-partida">Nova partida</button>
+            </div>               
+         </fieldset>
+         <fieldset>            
+            <div id="inserir-comecar">
+               <div class="botoes-inserir">
+                  <button id="inserir-jogadores" disabled="true">Inserir jogadores</button>
+                  <input type="text" id="nome-jogador" placeholder="Nome do jogador" disabled="true">
+               </div>
+               <button id="comecar-jogo" disabled="true">Comecar jogo</button>
+            </div>           
+         </fieldset>
+         <div class="mensagem-erro escondido"><p></p></div>
+      </form>
+   </main> 
+   <footer>
+      <p>Caio Cabral</p>
+      <p>Front-End Developer</p>
+      <a href="https://www.linkedin.com/in/caio-marcellus-cabral/" target="_blank"><p>Linkedin</p></a>
+   </footer>
+   <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 100%;
+  width: 100vw;
+  background-image: url("https://carollobato.com/wp-content/uploads/2020/06/0-Baralho-Dolgachov-80156318_m.jpg");
+  background-color: #194D19;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+   background-color: #000;
+   opacity: 0.7;
+   width: 100vw;
+   min-height: 9vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   padding: 3vh 3vw;
+   border: none;
+}
+
+.alura-logo {
+  height: 5vh;
+}
+
+.page-logo {
+  height: 5vh;
+  filter: hue-rotate(100deg);
+}
+
+.container {
+  text-align: center;
+  padding: 5vh;
+  min-height: 78.35vh;
+  width: 100vw;
+}
+
+h1,
+h3,
+legend {
+  color: white;
+}
+
+h1,
+h3:nth-child(3n){
+   margin-bottom: 2rem;
+}
+
+.mensagem-vitoria{
+   margin-bottom: 2vh;
+   margin-top: -2vh;
+   background-color: rgba(60,60,60, 0.2);
+   width: 75vw;
+   border: 1px solid #fff;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+table {
+   border: 2px solid white;
+   border-collapse: collapse;
+   width: 95vw;
+   margin-bottom: 4vh;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+  padding: 1vh 2vh;
+}
+
+th,
+tr:nth-child(even){
+   background-color: rgba(140,140,140,0.2);
+}
+
+fieldset{
+   border: 1px solid #fff;
+   width: 75vw;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+fieldset:first-child{
+   margin-bottom: 2vh;
+}
+
+#botoes-partida,
+#inserir-comecar{
+   display: flex;
+   justify-content: space-around;
+   padding: 3vh;
+}
+
+#botoes-partida button,
+#inserir-comecar button{
+   font-size: 1rem;
+   padding: 3vh;
+   opacity: 1;
+}
+
+.botoes-inserir{
+   display: flex;
+   gap: 1vw;
+}
+
+.botoes-inserir input{
+   font-size: 1.5rem;
+   padding: 3vh;
+}
+
+button{
+   color: #fff ;
+   font-size: 0.8rem;
+   background-color: #4D1D15;
+   border: 1px solid #fff;
+   padding: 1vh 2vh;
+   opacity: 0.8;
+   box-shadow: 3px 3px 3px #2E120D;
+}
+
+button:disabled{
+   filter: grayscale(0.5) opacity(0.5);
+   cursor: not-allowed;
+}
+
+.mensagem-erro{
+   margin-top: 2vh;
+   background-color: rgba(60,60,60, 0.2);
+   width: 75vw;
+   border: 1px solid #fff;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.mensagem-erro p,
+.mensagem-vitoria p{
+   font-size: 1.5rem;
+   color: #fff;
+   text-shadow: 2px 2px 2px #2E120D;
+   padding: 1vh;
+
+}
+
+
+footer{
+   background-color: #000;
+   opacity: 0.4;
+   width: 100vw;
+   min-height: 10vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center; 
+   margin: 0;
+   padding: 2vh 2vw;
+   border: none;
+}
+
+footer p{
+   color: #fff;
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+footer a{
+   text-decoration: none;
+   transition: 1s;
+}
+
+footer a:hover,
+footer a p:hover{
+   cursor: pointer;
+   color: #DDDD00;
+   font-size: 1.3rem;
+
+}
+
+.escondido{
+   display: none;
+}
+
+@media (max-width: 500px){
+   .alura-logo {
+     height: 4vh;
+     margin-left: 5px ;
+   }
+
+   .page-logo {
+      height: 4vh;
+      margin-right: 5px ;
+   }
+
+   footer p{
+      font-size: 0.8rem; 
+      font-weight: normal;  
+   }
+
+   footer a{
+      text-decoration: underline;
+      text-decoration-color:#fff ;
+   }
+}
+
+@media(max-width:300px){
+   footer{
+      flex-direction: column;
+   }
+}
